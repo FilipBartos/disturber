@@ -18,3 +18,16 @@ $(document).disturber({
   mobile: true
 });
 ```
+
+## Troubleshooting
+
+In some cases (loading of external resources etc) may be needed to wrap the code in 
+
+
+```js
+$( window ).load(function() {
+  // Init disturber
+});
+```
+
+### 
