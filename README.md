@@ -2,6 +2,9 @@
 
 Just a jQuery scroll handler
 
+## Demo
+[Disturber demo](http://bartos.me/data/projects/disturb/demo/)
+
 ## Usage
 
 
