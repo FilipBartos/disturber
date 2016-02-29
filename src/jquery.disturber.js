@@ -33,13 +33,19 @@
       },
       mapScenes: function() {
         var that = this;
-        this.settings.scenes.forEach(function(scene, index) {
+        this.settings.scenes.forEach(function(scene) {
+          that.identifyScene(that, scene);
+        });
+      },
+      identifyScene: function(that, scene) {
+        $(scene.selector).each(function(index) {
           var item = {selector: scene.selector,
+                      index: index,
                       action: scene.action,
-                      position: $(scene.selector).offset(),
-                      height: $(scene.selector).height()};
+                      position: $(this).offset(),
+                      height: $(this).height()};
           that.elements.push(item);
-        });        
+        });
       },
       // event handlers
       attachEvents: function() {
@@ -101,9 +107,9 @@
       },
       // setters
       updateScene: function(item) {
-        $(item.selector).removeClass(this.settings.classHolder);
+        $(item.selector).eq(item.index).removeClass(this.settings.classHolder);
         if(item.action.css != undefined) {
-          $(item.selector).addClass(item.action.css);
+          $(item.selector).eq(item.index).addClass(item.action.css);
         }
         if(item.action.js != undefined) {
           item.action['js']();
