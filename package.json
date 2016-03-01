@@ -1,0 +1,17 @@
+{
+  "name": "disturber",
+  "version": "1.0.0",
+  "description": "jQuery scroll handler",
+  "homepage": "https://github.com/FilipBartos/disturber",
+  "main": "src/jquery.disturber.js",
+  "author": "Filip Bartos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilipBartos/disturber.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FilipBartos/disturber/issues"
+  },
+  "homepage": "https://github.com/FilipBartos/disturber#readme"
+}
