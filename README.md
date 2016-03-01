@@ -2,6 +2,9 @@
 
 Just a jQuery scroll handler
 
+[![NPM version][npm-image]][npm-url]
+[![NPM downloads][downloads-image]][downloads-url]
+
 ## Demo
 [Disturber demo](http://bartos.me/data/projects/disturb/demo/)
 
